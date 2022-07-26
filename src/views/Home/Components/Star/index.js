@@ -1,8 +1,8 @@
 import React from 'react';
 import {Image, TouchableOpacity, StyleSheet} from 'react-native';
 
-import star from '../../assets/estrela.png';
-import starGrey from '../../assets/estrelaCinza.png';
+import star from '../../../../assets/estrela.png';
+import starGrey from '../../../../assets/estrelaCinza.png';
 
 export default function Star({onPress, disabled, large, full}) {
   const currentImage = () => {

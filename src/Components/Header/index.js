@@ -3,7 +3,7 @@ import {Text, View, Image, StyleSheet} from 'react-native';
 
 import {getHeader} from '../../services/getData';
 
-import logo from '../../../../assets/logo.png';
+import logo from '../../assets/logo.png';
 
 class Header extends React.Component {
   state = {

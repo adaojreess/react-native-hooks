@@ -1,18 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {FlatList, Text, StyleSheet} from 'react-native';
-import producers from '../../../../mocks/producers';
-import {getProducers} from '../../../../services/getData';
+import useProducers from '../../../../hooks/useProducers';
 import Producer from '../Producer';
 
 export default function Producers({header: Header}) {
-  const [title, setTitle] = useState('');
-  const [listProducers, setListProducers] = useState([]);
-
-  useEffect(() => {
-    const producers = getProducers();
-    setTitle(producers.title);
-    setListProducers(producers.list);
-  }, []);
+  const [title, listProducers] = useProducers();
 
   const ListHeader = () => {
     return (
